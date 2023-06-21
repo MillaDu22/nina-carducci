@@ -3,19 +3,37 @@
 	<title>Nina Carducci</title>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel ="canonical" href="https://ninacarducci.github.io/">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"><!--slider+filtrageGallery-->
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
+
+	<!-- title et description-->
 	<meta name="title" content ="Portfolio photographe-Nina Carducci">
 	<meta name="description" content="Portfolio photographies de Nina Carducci, mariages, portraits, entreprises, concerts...">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js" defer async></script>
-	<script src="./assets/scripts.js" defer async></script>
+
+	<!-- Open Graph data facebook-->
+	<meta property="og:title" content="Portfolio Nina Carducci"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content="https://github.com/MillaDu22/nina-carducci/blob/main/assets/images/Destop/Slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"/>
+	<meta property="og:description" content="Service de photographie pour tous vos évènements: shooting studio, mariage, entreprise, sport, portrait"/>
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="Photographe Nina Carducci">
+	<meta name="twitter:description" content="Service de photographie pour tous vos évènements: shooting studio, mariage, entreprise, sport, portrait">
+	<meta name="twitter:creator" content="@NinaCarducci">
+	<meta name="twitter:image" content="https://github.com/MillaDu22/nina-carducci/blob/main/assets/images/Destop/Slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp">
+
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script><!--slider + modale- gallery-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!--gallery photos-->
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
 <div class="top-header">
@@ -26,7 +44,7 @@
 			<li><a href="#gallery" aria-label="Gallery">Galerie</a></li>
 			<li><a href="#services" aria-label="Service">Service</a></li>
 			<li><a href="#contact" aria-label="Contact">Contact</a></li>
-			<li><a class="social-link" aria-label="Instagram" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="icône instagram"></a></li>
+			<li><a class="social-link" aria-label="Instagram" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" class="insta" alt="icône instagram"></a></li>
 		</ul>
 	</div>
 </div>
@@ -41,18 +59,12 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="./assets/images/Destop/Slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="image1 slider">
-				<img src="./assets/images/Tablette/Slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-blockTab w-100" alt="image1 sluder">
-				<img src="./assets/images/Mobile/Slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-blockMob w-100" alt="image1 slider">
 			</div>
 			<div class="carousel-item">
 				<img src="./assets/images/Destop/Slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="image2 slider">
-				<img src="./assets/images/Tablette/Slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-blockTab w-100" alt="image2 slider">
-				<img src="./assets/images/Mobile/Slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-blockMob w-100" alt="image2 slider">
 			</div>
 			<div class="carousel-item">
 				<img src="./assets/images/Destop/Slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="image3 slider">
-				<img src="./assets/images/Tablette/Slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-blockTab w-100" alt="image3 slider">
-				<img src="./assets/images/Mobile/Slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-blockMob w-100" alt="image3 slider">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -68,8 +80,6 @@
 <div id="about">
 	<div class="picture left">
 		<img class="left-desktop" src="./assets/images/Destop/left/nina.webp" alt="photo de Nina Carducci">
-		<img class="left-tab" src="./assets/images/Tablette/left/nina.webp" alt="photo de Nina Carducci">
-		<img class="left-mob" src="./assets/images/Mobile/left/nina.webp" alt="photo de Nina Carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -82,51 +92,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" >
-			<div class="box-gallery">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/Destop/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="photographie de concert"/>
-			<img data-gallery-tag="Concert" class="gallery-item-tab" src="./assets/images/Tablette/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="photographie de concert"/>
-			<img data-gallery-tag="Concert" class="gallery-item-mob" src="./assets/images/Mobile/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="photographie de concert"/>
-			</div>
-			<div class="box-gallery">		
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/Destop/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photographie d entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item-tab" src="./assets/images/Tablette/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photographie d entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item-mob" src="./assets/images/Mobile/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photographie d entreprise"/>
-			</div>
-			<div class="box-gallery">
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/Destop/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photographie d entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item-tab" src="./assets/images/Tablette/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photographie d entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item-mob" src="./assets/images/Mobile/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photographie d entreprise"/>
-			</div>
-			<div class="box-gallery">
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/Destop/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="photographie de mariage"/>
-			<img data-gallery-tag="Mariages" class="gallery-item-tab" src="./assets/images/Tablette/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="photographie de mariage"/>
-			<img data-gallery-tag="Mariages" class="gallery-item-mob" src="./assets/images/Mobile/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="photographie de mariage"/>
-			</div>
-			<div class="box-gallery">
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/Destop/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="photographie portraits"/>
-			<img data-gallery-tag="Portrait" class="gallery-item-tab" src="./assets/images/Tablette/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="photographie portraits"/>
-			<img data-gallery-tag="Portrait" class="gallery-item-mob" src="./assets/images/Mobile/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="photographie portraits"/>
-			</div>
-			<div class="box-gallery">
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/Destop/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="photographie de mariage"/>
-			<img data-gallery-tag="Mariages" class="gallery-item-tab" src="./assets/images/Tablette/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="photographie de mariage"/>
-			<img data-gallery-tag="Mariages" class="gallery-item-mob" src="./assets/images/Mobile/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="photographie de mariage"/>
-			</div>
-			<div class="box-gallery">
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/Destop/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="photographie portraits"/>
-			<img data-gallery-tag="Portrait" class="gallery-item-tab" src="./assets/images/Tablette/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="photographie portraits"/>
-			<img data-gallery-tag="Portrait" class="gallery-item-mob" src="./assets/images/Mobile/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="photographie portraits"/>
-			</div>
-			<div class="box-gallery">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/Destop/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="photographie de concert"/>
-			<img data-gallery-tag="Concert" class="gallery-item-tab" src="./assets/images/Tablette/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="photographie de concert"/>
-			<img data-gallery-tag="Concert" class="gallery-item-mob" src="./assets/images/Mobile/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="photographie de concert"/>
-			</div>
-			<div class="box-gallery">
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/Destop/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="photographie d'entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item-tab" src="./assets/images/Tablette/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="photographie d'entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item-mob" src="./assets/images/Mobile/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="photographie d'entreprise"/>
-			</div>
+			<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="photographie de concert"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="photographie d entreprise"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="photographie d entreprise"/>
+			<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="photographie de mariage"/>
+			<img data-gallery-tag="Portrait" class="gallery-item desk img fluid" src="./assets/images/Destop/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="photographie portraits"/>
+			<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="photographie de mariage"/>
+			<img data-gallery-tag="Portrait" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="photographie portraits"/>
+			<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="photographie de concert"/>
+			<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="photographie d'entreprise"/>
 		</div>
 	</div>
 	<div class="quote">
@@ -150,7 +124,6 @@
 				<h4>350€/demi journée</h4>
 				<span>Matériel, déplacement inclus</span>
 			</div>
-
 		</div>
 		<div class="service">
 			<div class="service__description">
@@ -199,8 +172,6 @@
 		</div>
 		<div class="picture right">
 			<img class="right-desktop" src="./assets/images/Destop/right/camera.webp" alt="photo d'appareil photo numérique">
-			<img class="right-tab" src="./assets/images/Tablette/right/camera.webp" alt="photo d'appareil photo numérique">
-			<img class="right-mob" src="./assets/images/Mobile/right/camera.webp" alt="photo d'appareil photo numérique">
 		</div>
 	</div>
 </div>
