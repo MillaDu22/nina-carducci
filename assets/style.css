@@ -311,6 +311,14 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 1180px) {
+	.carousel-item.active {
+		height:382px;
+		width:100%;
+	} 
+	.carousel-item {
+		height:382px;
+		width:100%;
+	}
 	.d-block {
 		width:100%;
 		height:100%;
@@ -354,10 +362,17 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 1000px) {
+	.carousel-item.active {
+		height:382px;
+		width:100%;
+	} 
+	.carousel-item {
+		height:382px;
+		width:100%;
+	}
 	.d-block {
 		width:100%;
 		height:100%;
-		display:none;
 		position:absolute;
 	}
 	#about{
@@ -449,11 +464,11 @@ input[type="submit"] {
 		text-align: center;
 	}
 	.carousel-item.active{
-		height:174px;
+		height:300px;
 		width:100%;
 	} 
 	.carousel-item {
-		height:174px;
+		height:300px;
 		width:100%;
 	}
 	.d-block {
