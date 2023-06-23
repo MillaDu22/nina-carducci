@@ -14,7 +14,7 @@ function showAll() {
         div.classList.add('show')
     })
 }
-activebtn(displayAll)
+
 
 displayConcert.addEventListener('click', showConcert)
 function showConcert() {
@@ -26,7 +26,7 @@ function showConcert() {
         }
     })
 }
-activebtn(displayConcert)
+
 
 
 displayEntreprise.addEventListener('click', showEntreprise)
