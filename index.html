@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" defer><!--slider+filtrageGallery-->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer><!--slider+filtrageGallery-->
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/Destop/Slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" class="d-block w-100" alt="image 1 un homme traverse la chaussée">
+				<img src="./assets/images/Destop/Slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="image 1 un homme traverse la chaussée">
 			</div>
 			<div class="carousel-item">
 				<img src="./assets/images/Destop/Slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="image 2 la foule acclame leur idole en plein concert">
@@ -90,19 +90,45 @@
 </div>
 <div id="gallery">
 	<h3 class="title">Portfolio</h3>
-	<div class="container py-3">
-		<div class="gallery" >
-			<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="foule dans une salle de concert"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="2 femmes qui rient au sein de leur entreprise"/>
-			<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains"/>
-			<img data-gallery-tag="Portrait" class="gallery-item desk img fluid" src="./assets/images/Destop/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant"/>
-			<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés"/>
-			<img data-gallery-tag="Portrait" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur"/>
-			<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="chanteur en plein concert"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise"/>
-		</div>
+	<div class="box-btns">
+		<span class="btn active tous">Tous</span>
+		<span class="btn concert">Concert</span>
+		<span class="btn entreprise">Entreprises</span>
+		<span class="btn mariage">Mariages</span>
+		<span class="btn portrait">Portrait</span> 
 	</div>
+		<div class="gallery" >
+			<div class = "box-photo" data ="concert" id="concert">
+				<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash (1).webp" alt="foule dans une salle de concert" onclick="openModal()"/>
+			</div>
+			<div class = "box-photo" data-entreprise="entreprise" id="entreprise">
+				<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise"/>
+			</div>
+			<div class = "box-photo" data-entreprise="entreprise" id="entreprise">
+				<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="2 femmes qui rient au sein de leur entreprise"/>
+			</div>
+			<div class = "box-photo" data-mariage="mariage" id="mariage">
+				<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains"/>
+			</div>
+			<div class = "box-photo" data-portrait="portrait" id="portrait">
+				<img data-gallery-tag="Portrait" class="gallery-item desk img fluid" src="./assets/images/Destop/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant"/>
+			</div>
+			<div class = "box-photo" data-mariage ="mariage" id="mariage">
+				<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés"/>
+			</div>
+			<div class = "box-photo" data-portrait="portrait" id="portrait">
+				<img data-gallery-tag="Portrait"  class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur"/>
+			</div>
+			<div class = "box-photo" data-concert="concert" id="concert">
+				<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="chanteur en plein concert"/>
+			</div>
+			<div class = "box-photo" data-entreprise="entreprise" id="entreprise">
+				<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise"/>
+			</div>
+		</div>
+		<div class="modal-body">
+			<div class="lightboxImage"></div>
+		</div>
 	<div class="quote">
 		<figure>
 			<blockquote>
@@ -178,10 +204,8 @@
 	</div>
 </div>
 </footer>
-<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script><!--slider + modale- gallery-->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!--gallery photos-->
-<script src="./assets/maugallery.min.js" defer></script>
-<script src="./assets/scripts.js" defer></script>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
+<script src="./assets/gallery.js" async></script>
 <script type="application/ld+json">
 	{
 		"@context": "https://schema.org",

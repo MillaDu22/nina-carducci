@@ -1826,7 +1826,6 @@
       return element.classList.contains(CLASS_NAME_SHOW$7);
     } // Private
 
-
     _getConfig(config) {
       config = { ...Default$9,
         ...Manipulator.getDataAttributes(this._element),
@@ -1902,21 +1901,6 @@
    * ------------------------------------------------------------------------
    */
 
-
-  EventHandler.on(document, EVENT_CLICK_DATA_API$4, SELECTOR_DATA_TOGGLE$4, function (event) {
-    // preventDefault only for <a> elements (which change the URL) not inside the collapsible element
-    if (event.target.tagName === 'A' || event.delegateTarget && event.delegateTarget.tagName === 'A') {
-      event.preventDefault();
-    }
-
-    const selector = getSelectorFromElement(this);
-    const selectorElements = SelectorEngine.find(selector);
-    selectorElements.forEach(element => {
-      Collapse.getOrCreateInstance(element, {
-        toggle: false
-      }).toggle();
-    });
-  });
   /**
    * ------------------------------------------------------------------------
    * jQuery
