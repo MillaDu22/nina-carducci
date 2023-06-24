@@ -52,11 +52,11 @@ body {
 }
 .carousel-item.active{
 	position:relative;
-	height: auto;
+	height: 618px;
 	width:100%;
 } 
 .carousel-item {
-	height:auto;
+	height:618px;
 	width:100%;
 }
 .d-block {
@@ -186,58 +186,66 @@ body {
 	padding-block: 2em;
 }
 .fond-modal {
-	display:flex;
 	justify-content: center;
 	align-items: center;
 	width:100%;
-	height:800vh;
+	height:100%;
 	top:0;
-	background:rgba(201, 199, 199, 0.292);
-	position:absolute;
-	z-index:1;
+	left:0;
+	background:rgba(33, 37, 41, 0.506);
+	position:fixed;
+	z-index:1055;
+	overflow-x:hidden;
+	overflow-y: auto;
+	display:none;
 }
 .lightboxImage {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	border:1px solid black;
-	width:38%;
+	width:100%;
 	height:100%;
-	position:absolute;
+	position:relative;
 	z-index:3;
 }
 .img-modal {
 	width:100%;
 	height:100%;
-	border:1px solid red;
-	z-index:4;
+	
 }
 .arrows {
+	position:fixed;
 	display:flex;
 	justify-content: space-between;
-	width:100%;
+	width:475px;
 	z-index: 5;
 }
 .arrow-left, .arrow-right{
-	width:100%;
+	position:relative;
+	width:6%;
 	background:white;
+	font-size:25px;
 }
 .arrow-left {
 	text-align:left;
+	margin-left:-8%;
+	padding-left:2%;
 }
 .arrow-right {
 	text-align:right;
+	margin-right:-8%;
+	padding-right:2%;
 }
 .modal-body {
-	position:absolute;
 	display:flex;
 	justify-content: center;
 	background:white;
+	border-radius:3px;
 	align-items: center;
-	width:40%;
-	height:600px;
+	max-width:500px;
+	height:auto;
+	overflow: scroll;
 	z-index:2;
-	/*display:none;*/
 }
 .desk{
 	display:block;
@@ -468,6 +476,7 @@ input[type="submit"] {
 		position:relative;
 		margin-top:5%;
 	}
+
 	.box-photo{
 		width:33%;
 		height:250px;
