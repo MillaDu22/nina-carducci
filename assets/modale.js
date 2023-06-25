@@ -1,14 +1,34 @@
 const modal = document.querySelector('.fond-modal');
-const openModal = document.querySelectorAll('.desk');
 const slide=document.querySelectorAll('.img-modal')
 const slides=document.querySelector('.lightboxImage')
 const nbSlide = slide.length;
 
-/*openModal.addEventListener('click', OpenModal)
-function OpenModal () {
-    modal.style.display="flex"
+/*const openModal = document.querySelectorAll('.desk').id;
+function open() {
+    openModal.addEventListener('click', function(e) {
+        e.preventDefault()
+        modal.style.display="flex"
+    })
 }
-openModal()*/
+open()*/
+
+const sideClickCloseModale = document.querySelector('.fond-modal');
+function sideCloseModale() {
+    sideClickCloseModale.addEventListener('click', function(e) {
+        e.preventDefault()
+        modal.style.display="none";
+        window.location=('./index.html');
+    });
+}
+sideCloseModale();
+
+const modalBody = document.querySelector('.modal-body');
+modalBody.addEventListener('click', stop )
+
+function stop(e) {
+    e.stopPropagation()
+}
+
 
 function Slider () {
     const btnPrev = document.querySelector('.arrow-left');
