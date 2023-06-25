@@ -153,11 +153,7 @@ body {
 	justify-content: center;
 	font-size:1rem;
 }
-/*.tous:hover, .concert:hover, .entreprise:hover, .mariage:hover, .portrait:hover {
-	color:white;
-	background:  #777138;
-}*/
-.active {
+.btn.active {
 	color:white;
 	background:  #777138;
 }
@@ -203,14 +199,25 @@ body {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	width:100%;
-	height:100%;
+	max-width:100%;
+	max-height:auto;
 	position:relative;
 	z-index:3;
 }
+.img-modal.active {
+	display:block;
+	box-sizing: border-box;
+	max-width:100%;
+	max-height:100%;
+	object-fit: cover;
+}
 .img-modal {
-	width:100%;
-	height:100%;
+	box-sizing: border-box;
+	overflow-clip-margin: content-box;
+	max-width:100%;
+	max-height:100%;
+	object-fit:cover;
+	display:none;
 	
 }
 .arrows {
@@ -244,7 +251,6 @@ body {
 	align-items: center;
 	max-width:500px;
 	height:auto;
-	overflow: scroll;
 	z-index:2;
 }
 .desk{
@@ -585,6 +591,19 @@ input[type="submit"] {
 	.box-photo{
 		height:450px;
 		width:100%;
+	}
+	.modal-body {
+		display:flex;
+		justify-content: center;
+		background:white;
+		border-radius:3px;
+		align-items: center;
+		max-width:90%;
+		height:auto;
+		z-index:2;
+	}
+	.arrows {
+		width:85%;
 	}
 	#services .container {
 		align-items: center;

@@ -6,18 +6,23 @@ const displayPortrait = document.querySelector('.portrait');
 const photosFiltree = document.querySelectorAll('.box-photo');
 const arrayPhotoFiltree= Array.from(photosFiltree);
 const gallery =document.querySelector('gallery');
+const btns =document.querySelectorAll('.btn')
+let currentBtns = 0
+
 
 displayAll.addEventListener('click', showAll)
 function showAll() {
+    btns[currentBtns].classList.remove('active')
     arrayPhotoFiltree.forEach(div=>{
         div.classList.remove('remove')
         div.classList.add('show')
     })
 }
-
+btns[currentBtns].classList.add('active')
 
 displayConcert.addEventListener('click', showConcert)
 function showConcert() {
+    btns[currentBtns].classList.remove('active')
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
         
@@ -26,11 +31,11 @@ function showConcert() {
         }
     })
 }
-
-
+btns[currentBtns].classList.add('active')
 
 displayEntreprise.addEventListener('click', showEntreprise)
 function showEntreprise() {
+    btns[currentBtns].classList.remove('active')
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
 
@@ -39,9 +44,11 @@ function showEntreprise() {
         }
     })
 }
+btns[currentBtns].classList.add('active')
 
 displayMariage.addEventListener('click', showMariage)
 function showMariage() {
+    btns[currentBtns].classList.remove('active')
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
 
@@ -50,9 +57,12 @@ function showMariage() {
         }
     })
 }
+btns[currentBtns].classList.add('active')
+
 
 displayPortrait.addEventListener('click', showPortrait)
 function showPortrait() {
+    btns[currentBtns].classList.remove('active')
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
 
@@ -61,4 +71,6 @@ function showPortrait() {
         }
     })
 }
+btns[currentBtns].classList.add('active')
+
 
