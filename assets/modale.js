@@ -3,14 +3,16 @@ const slide=document.querySelectorAll('.img-modal')
 const slides=document.querySelector('.lightboxImage')
 const nbSlide = slide.length;
 
-/*const openModal = document.querySelectorAll('.desk').id;
 function open() {
-    openModal.addEventListener('click', function(e) {
-        e.preventDefault()
-        modal.style.display="flex"
+    const openModal = document.querySelectorAll('.desk');
+    openModal.forEach (open => {
+        open.addEventListener('click', function(e) {
+            e.preventDefault()
+            modal.style.display="flex";
+        })
     })
 }
-open()*/
+open()
 
 const sideClickCloseModale = document.querySelector('.fond-modal');
 function sideCloseModale() {

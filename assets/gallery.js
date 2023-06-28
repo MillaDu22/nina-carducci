@@ -9,20 +9,24 @@ const gallery =document.querySelector('gallery');
 const btns =document.querySelectorAll('.btn')
 let currentBtns = 0
 
-
 displayAll.addEventListener('click', showAll)
-function showAll() {
-    btns[currentBtns].classList.remove('active')
+function showAll(e) {
+    btns.forEach(btn  => {
+        btn.classList.remove('active')
+        e.target.classList.add('active')
+    })
     arrayPhotoFiltree.forEach(div=>{
         div.classList.remove('remove')
         div.classList.add('show')
     })
 }
-btns[currentBtns].classList.add('active')
 
 displayConcert.addEventListener('click', showConcert)
-function showConcert() {
-    btns[currentBtns].classList.remove('active')
+function showConcert(e) {
+    btns.forEach(btn  => {
+        btn.classList.remove('active')
+        e.target.classList.add('active')
+    })
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
         
@@ -31,11 +35,14 @@ function showConcert() {
         }
     })
 }
-btns[currentBtns].classList.add('active')
+
 
 displayEntreprise.addEventListener('click', showEntreprise)
-function showEntreprise() {
-    btns[currentBtns].classList.remove('active')
+function showEntreprise(e) {
+    btns.forEach(btn  => {
+        btn.classList.remove('active')
+        e.target.classList.add('active')
+    })
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
 
@@ -44,11 +51,14 @@ function showEntreprise() {
         }
     })
 }
-btns[currentBtns].classList.add('active')
+
 
 displayMariage.addEventListener('click', showMariage)
-function showMariage() {
-    btns[currentBtns].classList.remove('active')
+function showMariage(e) {
+    btns.forEach(btn  => {
+        btn.classList.remove('active')
+        e.target.classList.add('active')
+    })
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
 
@@ -57,12 +67,13 @@ function showMariage() {
         }
     })
 }
-btns[currentBtns].classList.add('active')
-
 
 displayPortrait.addEventListener('click', showPortrait)
-function showPortrait() {
-    btns[currentBtns].classList.remove('active')
+function showPortrait(e) {
+    btns.forEach(btn  => {
+        btn.classList.remove('active')
+        e.target.classList.add('active')
+    })
     arrayPhotoFiltree.forEach (div => {
         div.classList.remove('remove')
 
@@ -70,7 +81,7 @@ function showPortrait() {
             div.classList.add ('remove')
         }
     })
-}
-btns[currentBtns].classList.add('active')
+}*/
+
 
 
