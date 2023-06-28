@@ -5,7 +5,6 @@ const displayMariage = document.querySelector('.mariage');
 const displayPortrait = document.querySelector('.portrait');
 const photosFiltree = document.querySelectorAll('.box-photo');
 const arrayPhotoFiltree= Array.from(photosFiltree);
-const gallery =document.querySelector('gallery');
 const btns =document.querySelectorAll('.btn')
 let currentBtns = 0
 
@@ -35,7 +34,6 @@ function showConcert(e) {
         }
     })
 }
-
 
 displayEntreprise.addEventListener('click', showEntreprise)
 function showEntreprise(e) {
@@ -81,7 +79,7 @@ function showPortrait(e) {
             div.classList.add ('remove')
         }
     })
-}*/
+}
 
 
 

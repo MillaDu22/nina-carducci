@@ -43,7 +43,7 @@
 			<li><a href="#gallery" aria-label="Gallery">Galerie</a></li>
 			<li><a href="#services" aria-label="Service">Service</a></li>
 			<li><a href="#contact" aria-label="Contact">Contact</a></li>
-			<li><a class="social-link" aria-label="Instagram" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.webp" class="insta" alt="icône instagram"></a></li>
+			<li><a class="social-link" aria-label="Instagram" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener"><img src="assets/images/instagram.webp" class="insta" alt="icône instagram"></a></li>
 		</ul>
 	</div>
 </div>
@@ -99,50 +99,50 @@
 		<span class="btn portrait">Portrait</span> 
 	</div>
 		<div class="gallery" >
-			<div class = "box-photo" data-concert ="concert" id="concert">
-				<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/aaron-paul-wnX-fXzB6Cw-unsplash (1).webp" alt="foule dans une salle de concert" id="img1"/>
+			<div class = "box-photo" data-concert ="concert">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/aaron-paul-wnX-fXzB6Cw-unsplash (1).webp" alt="foule dans une salle de concert" onclick="openModal();currentSlide(1)"/>
 			</div>
-			<div class = "box-photo" data-entreprise="entreprise" id="entreprise">
-				<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise" id="img2"/>
+			<div class = "box-photo" data-entreprise="entreprise">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise" onclick="openModal();currentSlide(2)"/>
 			</div>
-			<div class = "box-photo" data-entreprise="entreprise" id="entreprise"> 
-				<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/jason-goodman-tHO1_OuKbg0-unsplash (1).webp" alt="2 femmes qui rient au sein de leur entreprise" id="img3"/>
+			<div class = "box-photo" data-entreprise="entreprise"> 
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/jason-goodman-tHO1_OuKbg0-unsplash (1).webp" alt="2 femmes qui rient au sein de leur entreprise" onclick="openModal();currentSlide(3)"/>
 			</div>
-			<div class = "box-photo" data-mariage="mariage" id="mariage">
-				<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains" id="img4"/>
+			<div class = "box-photo" data-mariage="mariage">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains" onclick="openModal();currentSlide(4)"/>
 			</div>
-			<div class = "box-photo" data-portrait="portrait" id="portrait">
-				<img data-gallery-tag="Portrait" class="gallery-item desk img fluid" src="./assets/images/Destop/gallery/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant" id="img5"/>
+			<div class = "box-photo" data-portrait="portrait">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant" onclick="openModal();currentSlide(5)"/>
 			</div>
-			<div class = "box-photo" data-mariage ="mariage" id="mariage">
-				<img data-gallery-tag="Mariages" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés" id="img6"/>
+			<div class = "box-photo" data-mariage ="mariage">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés" onclick="openModal();currentSlide(6)"/>
 			</div>
-			<div class = "box-photo" data-portrait="portrait" id="portrait">
-				<img data-gallery-tag="Portrait"  class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur" id="img7"/>
+			<div class = "box-photo" data-portrait="portrait">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur" onclick="openModal();currentSlide(7)"/>
 			</div>
-			<div class = "box-photo" data-concert="concert" id="concert">
-				<img data-gallery-tag="Concert" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="chanteur en plein concert" id="img8"/>
+			<div class = "box-photo" data-concert="concert">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="chanteur en plein concert" onclick="openModal();currentSlide(8)"/>
 			</div>
-			<div class = "box-photo" data-entreprise="entreprise" id="entreprise">
-				<img data-gallery-tag="Entreprises" class="gallery-item desk img-fluid" src="./assets/images/Destop/gallery/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise" id="img8"/>
+			<div class = "box-photo" data-entreprise="entreprise">
+				<img class="gallery-item desk" src="./assets/images/Destop/gallery/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise" onclick="openModal();currentSlide(9)"/>
 			</div>
 		</div>
-		<div class="fond-modal">
-		<div class="modal-body">
+		<div class="fond-modal" id="myModal">
+		<div class="modal-body" role ="alertdialog" aria-modal="true">
 			<div class="arrows">
-				<span class="arrow-left"><</span>
-				<span class="arrow-right">></span>
+				<span class="arrow-left" onclick="prevNext(-1)"><</span>
+				<span class="arrow-right" onclick="prevNext(1)">></span>
 			</div>
 			<div class="lightboxImage">
-				<img data-slide="1" class="img-modal active" src="./assets/images/Destop/gallery/aaron-paul-wnX-fXzB6Cw-unsplash (1).webp" alt="foule dans une salle de concert" id="img1"/>
-				<img data-slide="2" class="img-modal" src="./assets/images/Destop/gallery/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise" id="img2"/>
-				<img data-slide="3" class="img-modal" src="./assets/images/Destop/gallery/jason-goodman-tHO1_OuKbg0-unsplash (1).webp" alt="2 femmes qui rient au sein de leur entreprise" id="img3"/>		
-				<img data-slide="4" class="img-modal" src="./assets/images/Destop/gallery/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains" id="img4"/>		
-				<img data-slide="5" class="img-modal" src="./assets/images/Destop/gallery/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant" id="img5"/>
-				<img data-slide="6" class="img-modal" src="./assets/images/Destop/gallery/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés" id="img6"/>		
-				<img data-slide="7" class="img-modal" src="./assets/images/Destop/gallery/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur" id="img7"/>		
-				<img data-slide="8" class="img-modal" src="./assets/images/Destop/gallery/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="chanteur en plein concert" id="img8"/>		
-				<img data-slide="9" class="img-modal" src="./assets/images/Destop/gallery/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise" id="img9"/>
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/aaron-paul-wnX-fXzB6Cw-unsplash (1).webp" alt="foule dans une salle de concert" onclick="currentSlide(1)"/>
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise" onclick="currentSlide(2)"/>
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/jason-goodman-tHO1_OuKbg0-unsplash (1).webp" alt="2 femmes qui rient au sein de leur entreprise" onclick="currentSlide(3)"/>		
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains" onclick="currentSlide(4)"/>		
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant" onclick="currentSlide(5)"/>
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés" onclick="currentSlide(6)"/>		
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur" onclick="currentSlide(7)"/>		
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="chanteur en plein concert" onclick="currentSlide(8)"/>		
+				<img class="img-modal dots" src="./assets/images/Destop/gallery/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise" onclick="currentSlide(9)"/>
 			</div>
 			</div>
 		</div>

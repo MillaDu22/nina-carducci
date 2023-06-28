@@ -1,19 +1,34 @@
 const modal = document.querySelector('.fond-modal');
-const slide=document.querySelectorAll('.img-modal')
-const slides=document.querySelector('.lightboxImage')
-const nbSlide = slide.length;
+const slides = document.querySelector('.lightboxImage');
 
-function open() {
-    const openModal = document.querySelectorAll('.desk');
-    openModal.forEach (open => {
-        open.addEventListener('click', function(e) {
-            e.preventDefault()
-            modal.style.display="flex";
-        })
-    })
+function openModal() {
+    document.getElementById("myModal").style.display = "flex";
 }
-open()
-
+let slideIndex = 1;
+showSlides(slideIndex);
+/*Précédent et suivant*/
+function prevNext(n) {
+    showSlides(slideIndex += n);
+}
+/*actualisation*/
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("img-modal");
+    var dots = document.getElementsByClassName("dots");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
 const sideClickCloseModale = document.querySelector('.fond-modal');
 function sideCloseModale() {
     sideClickCloseModale.addEventListener('click', function(e) {
@@ -23,51 +38,9 @@ function sideCloseModale() {
     });
 }
 sideCloseModale();
-
 const modalBody = document.querySelector('.modal-body');
 modalBody.addEventListener('click', stop )
-
 function stop(e) {
     e.stopPropagation()
 }
 
-
-function Slider () {
-    const btnPrev = document.querySelector('.arrow-left');
-    const btnNext = document.querySelector('.arrow-right');
-    let currentSlide = 0;
-
-    const ChangeSlide = function(){
-    slide.forEach((slider, index) => (
-        slider.style.transform= "translateX"))
-    }
-    ChangeSlide(currentSlide);
-
-    function slideSuivante() {
-        slide[currentSlide].classList.remove('active')
-        if(currentSlide < nbSlide -1) {
-            currentSlide++;
-        } else {
-            currentSlide= 0;
-        }
-        slide[currentSlide].classList.add('active')
-        console.log(currentSlide)
-    }
-    btnNext.addEventListener('click', slideSuivante)
-    ChangeSlide(currentSlide)
-
-
-    function slidePrecedente() {
-        slide[currentSlide].classList.remove('active')
-        if(currentSlide > 0) {
-            currentSlide --;
-        } else {
-            currentSlide= nbSlide - 1;
-        }
-        slide[currentSlide].classList.add('active')
-        console.log(currentSlide)
-    }
-    btnPrev.addEventListener('click', slidePrecedente)
-    ChangeSlide(currentSlide)
-}
-Slider();
