@@ -145,7 +145,7 @@ body {
 	justify-content: space-around;
 	align-items:center;
 }
-.tous, .concert, .entreprise, .mariage, .portrait {
+#tous, #concert, #entreprise, #mariage, #portrait {
 	display:flex;
 	padding:0.5rem 1rem;
 	align-items: center;

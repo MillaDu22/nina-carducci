@@ -22,6 +22,7 @@ function prevNext(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("img-modal");
@@ -37,6 +38,7 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
 const sideClickCloseModale = document.querySelector('.fond-modal');
 function sideCloseModale() {
     sideClickCloseModale.addEventListener('click', function(e) {
@@ -51,80 +53,24 @@ modalBody.addEventListener('click', stop )
 function stop(e) {
     e.stopPropagation()
 }
-
-//Filtrage
-let currentBtns = 0
-
-displayAll.addEventListener('click', showAll)
-function showAll(e) {
-    btns.forEach(btn  => {
-        btn.classList.remove('active')
-        e.target.classList.add('active')
-    })
-    arrayPhotoFiltree.forEach(div=>{
-        div.classList.remove('remove')
-        div.classList.add('show')
-    })
-}
-
-displayConcert.addEventListener('click', showConcert)
-function showConcert(e) {
-    btns.forEach(btn  => {
-        btn.classList.remove('active')
-        e.target.classList.add('active')
-    })
-    arrayPhotoFiltree.forEach (div => {
-        div.classList.remove('remove')
-        
-        if(!div.dataset.concert) {
-            div.classList.add ('remove')
-        }
-    })
-}
-
-displayEntreprise.addEventListener('click', showEntreprise)
-function showEntreprise(e) {
-    btns.forEach(btn  => {
-        btn.classList.remove('active')
-        e.target.classList.add('active')
-    })
-    arrayPhotoFiltree.forEach (div => {
-        div.classList.remove('remove')
-
-        if(!div.dataset.entreprise) {
-            div.classList.add ('remove')
-        }
-    })
-}
-
-displayMariage.addEventListener('click', showMariage)
-function showMariage(e) {
-    btns.forEach(btn  => {
-        btn.classList.remove('active')
-        e.target.classList.add('active')
-    })
-    arrayPhotoFiltree.forEach (div => {
-        div.classList.remove('remove')
-
-        if(!div.dataset.mariage) {
-            div.classList.add ('remove')
-        }
-    })
-}
-
-displayPortrait.addEventListener('click', showPortrait)
-function showPortrait(e) {
-    btns.forEach(btn  => {
-        btn.classList.remove('active')
-        e.target.classList.add('active')
-    })
-    arrayPhotoFiltree.forEach (div => {
-        div.classList.remove('remove')
-
-        if(!div.dataset.portrait) {
-            div.classList.add ('remove')
-        }
-    })
+window.onload =() => {
+    let filters= document.querySelectorAll (".btn")
+    for( let filter of filters) {
+        filter.addEventListener("click", function (e) {
+            btns.forEach(btn  => {
+                btn.classList.remove('active')
+                e.target.classList.add('active')
+            })
+            let tag = this.id;
+            let images =document.querySelectorAll(".box-photo")
+            for (let image of images) {
+                image.classList.replace ("active", "remove")
+                if(tag in image.dataset  || tag === "tous") {
+                    image.classList.replace ("remove", "active")
+                }
+            }
+        })
+    }
 }
 
 
