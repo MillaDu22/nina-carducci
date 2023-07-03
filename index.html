@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer><!--slider-->
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="canonical" href="https://milladu22.github.io/nina-carducci/">
@@ -121,22 +121,22 @@
 			</div>
 		</div>
 		<div class="fond-modal" id="myModal">
-		<div class="modal-body" role ="alertdialog" aria-modal="true">
-			<div class="arrows">
-				<span class="arrow-left" onclick="prevNext(-1)"><</span>
-				<span class="arrow-right" onclick="prevNext(1)">></span>
-			</div>
-			<div class="lightboxImage">
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/aaron-paul-wnX-fXzB6Cw-unsplash (1).webp" alt="foule dans une salle de concert" onclick="currentSlide(1)" data-concert="concert"/>
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise" onclick="currentSlide(2)" data-entreprise="entreprise"/>
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/jason-goodman-tHO1_OuKbg0-unsplash (1).webp" alt="2 femmes qui rient au sein de leur entreprise" onclick="currentSlide(3)" data-entreprise="entreprise"/>		
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains" onclick="currentSlide(4)" data-mariage="mariage"/>		
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant" onclick="currentSlide(5)" data-portrait="portrait"/>
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés" onclick="currentSlide(6)" data-mariage="mariage"/>		
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur" onclick="currentSlide(7)" data-portrait="portrait"/>	
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="chanteur en plein concert" onclick="currentSlide(8)" data-concert="concert"/>	
-				<img class="img-modal dots" src="./assets/images/Destop/gallery/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise" onclick="currentSlide(9)" data-entreprise="entreprise"/>
-			</div>
+			<div class="modal-body" role ="dialog" aria-hidden="true" aria-labelledby="modaleSanstitre">
+				<div class="arrows">
+					<span class="arrow-left" onclick="prevNext(-1)"><</span>
+					<span class="arrow-right" onclick="prevNext(1)">></span>
+				</div>
+				<div class="lightboxImage" id="modale" role="document">
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/aaron-paul-wnX-fXzB6Cw-unsplash (1).webp" alt="foule dans une salle de concert" onclick="currentSlide(1)" data="concert"/>
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="portrait de chef d'entreprise" onclick="currentSlide(2)" data-entreprise="entreprise"/>
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/jason-goodman-tHO1_OuKbg0-unsplash (1).webp" alt="2 femmes qui rient au sein de leur entreprise" onclick="currentSlide(3)" data-entreprise="entreprise"/>		
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="Les mariés se tendent les mains" onclick="currentSlide(4)" data-mariage="mariage"/>		
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portraits d'un homme grimaçant" onclick="currentSlide(5)" data-portrait="portrait"/>
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="jeunes mariés" onclick="currentSlide(6)" data-mariage="mariage"/>		
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait de femme en exterieur" onclick="currentSlide(7)" data-portrait="portrait"/>	
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/austin-neill-hgO1wFPXl3I-unsplash (1).webp" alt="chanteur en plein concert" onclick="currentSlide(8)" data="concert"/>	
+					<img class="img-modal dots" src="./assets/images/Destop/gallery/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="une jeune femme qui travaille et rit au sein de son entreprise" onclick="currentSlide(9)" data-entreprise="entreprise"/>
+				</div>
 			</div>
 		</div>
 	<div class="quote">
@@ -215,7 +215,7 @@
 </div>
 </footer>
 <script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script><!--slider-->
-<script src="./assets/maugallery.js" async></script><!--gallery-->
+<script src="./assets/maugallery.min.js" async></script><!--gallery-->
 <script type="application/ld+json">
 	{
 		"@context": "https://schema.org",

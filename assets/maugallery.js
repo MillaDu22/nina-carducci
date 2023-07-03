@@ -8,10 +8,13 @@ const arrayPhotoFiltree= Array.from(photosFiltree);
 const btns =document.querySelectorAll('.btn')
 const modal = document.querySelector('.fond-modal');
 const slides = document.querySelector('.lightboxImage');
+const body = document.querySelector('body')
 
 function openModal() {
     document.getElementById("myModal").style.display = "flex";
+    body.style.position = 'fixed';
 }
+
 let slideIndex = 1;
 showSlides(slideIndex);
 /*Précédent et suivant*/
@@ -29,7 +32,7 @@ function showSlides(n) {
     var dots = document.getElementsByClassName("dots");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i++) { 
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
@@ -72,6 +75,7 @@ window.onload =() => {
         })
     }
 }
+
 
 
 
